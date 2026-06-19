@@ -1,0 +1,20 @@
+dataset:
+  root_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind_v2020r1_official
+  structure_archive: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind_v2020r1_official/P-L.tar
+  index_archive: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind_v2020r1_official/index.tar
+  index_member: index/INDEX_general_PL.2020R1.lst
+
+workspace:
+  root_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline
+  raw_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/raw
+  extracted_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/extracted
+  interim_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim
+  final_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/final
+  reports_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/reports
+  logs_dir: /Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/logs
+
+io:
+  prefer_stream_from_tar: true
+  extract_archives_on_demand: false
+  manifest_format: parquet
+  report_format: csv

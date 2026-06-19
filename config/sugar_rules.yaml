@@ -1,0 +1,11 @@
+review_buckets:
+  - ambiguous_sugar
+  - ambiguous_multicomponent_ligand
+
+heuristics:
+  require_5_or_6_member_ring: true
+  require_ring_oxygen_for_primary_sugar_call: true
+  min_ring_oxygen_count: 1
+  min_exocyclic_oxygen_count: 2
+  min_oxygen_to_carbon_ratio: 0.5
+  max_non_sugar_heavy_atom_fraction: 0.5

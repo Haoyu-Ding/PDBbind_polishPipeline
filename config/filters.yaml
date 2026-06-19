@@ -1,0 +1,145 @@
+profiles:
+  active: strict_v2
+
+strict_v1:
+  index_scope: general_pl
+
+  hard_exclusions:
+    exclude_covalent_complex: true
+    exclude_incomplete_ligand: true
+    exclude_peptide_like_n_mer: true
+    exclude_isomer_annotations: true
+    exclude_unparseable_ligand: true
+    exclude_multi_chain_protein: true
+    exclude_multi_component_ligand: true
+
+  tracked_but_not_excluded:
+    keep_redundant_to_annotations: true
+    keep_nmr_entries: true
+    keep_low_resolution_entries: true
+
+  sugar_rules:
+    classify_mode: structure_first
+    allow_name_whitelist_assist: true
+    send_conflicts_to_ambiguous_bucket: true
+    treat_glycosides_with_sugar_as_main_scaffold_as_sugar: true
+    treat_non_sugar_parent_with_small_sugar_substituent_as_nonsugar: true
+
+  nonsugar_flexibility:
+    metric: rdkit_strict_rotatable_bonds
+    rigid_threshold_lt: 7
+    flexible_threshold_gte: 7
+
+  nonsugar_ligand_dedup:
+    enabled: true
+    fingerprint: morgan
+    radius: 2
+    nbits: 2048
+    similarity_metric: tanimoto
+    similarity_threshold_gt: 0.85
+    dedup_within_buckets:
+      - rigid
+      - flexible
+
+  nonsugar_protein_dedup:
+    enabled: true
+    mode: exact_sequence_identity
+
+  representative_selection:
+    prefer_numeric_resolution: true
+    lower_resolution_value_is_better: true
+    tie_breaker: pdb_id_lexicographic
+
+  export_complex:
+    export_format: pdb
+    keep_exactly_one_protein_chain: true
+    keep_exactly_one_target_ligand: true
+    rebuild_target_ligand_from_ligand_file: true
+    remove_waters: true
+    remove_metals: true
+    remove_salts: true
+    remove_cofactors: true
+    remove_other_hetero_species: true
+
+relaxed_candidates:
+  notes:
+    - Future profile placeholder.
+    - Likely relax protein chain constraints before changing chemistry exclusions.
+
+strict_v2:
+  index_scope: general_pl
+
+  hard_exclusions:
+    exclude_covalent_complex: true
+    exclude_incomplete_ligand: true
+    exclude_peptide_like_n_mer: true
+    exclude_isomer_annotations: true
+    exclude_unparseable_ligand: true
+    exclude_multi_component_ligand: true
+    exclude_no_primary_contact_chain: true
+    exclude_interface_dominated_binding: true
+    exclude_ligand_below_min_mw: true
+    exclude_primary_chain_above_max_length: true
+
+  tracked_but_not_excluded:
+    keep_redundant_to_annotations: true
+    keep_nmr_entries: true
+    keep_low_resolution_entries: true
+
+  contact_chain_rules:
+    heavy_atom_distance_cutoff_angstrom: 5.0
+    minimum_primary_contact_fraction: 0.70
+
+  ligand_size_rules:
+    min_mol_wt_gt: 150.0
+
+  protein_size_rules:
+    max_primary_chain_length_lte: 300
+
+  sugar_rules:
+    classify_mode: structure_only
+    require_5_or_6_member_ring: true
+    require_ring_oxygen: true
+    min_ring_oxygen_count: 1
+    min_exocyclic_oxygen_count: 2
+    min_oxygen_to_carbon_ratio: 0.5
+    max_non_sugar_heavy_atom_fraction: 0.5
+
+  nonsugar_flexibility:
+    metric: rdkit_rotatable_bonds_and_ratio
+    rigid_max_rotatable_bonds: 5
+    rigid_max_rotatable_ratio: 0.18
+    flexible_min_rotatable_bonds: 8
+    flexible_min_rotatable_ratio: 0.30
+    intermediate_policy: exclude
+
+  nonsugar_ligand_dedup:
+    enabled: true
+    fingerprint: morgan
+    radius: 2
+    nbits: 2048
+    similarity_metric: tanimoto
+    similarity_threshold_gt: 0.85
+    dedup_within_buckets:
+      - rigid
+      - flexible
+
+  nonsugar_protein_dedup:
+    enabled: true
+    mode: exact_sequence_identity
+
+  representative_selection:
+    prefer_numeric_resolution: true
+    lower_resolution_value_is_better: true
+    tie_breaker: pdb_id_lexicographic
+
+  export_complex:
+    export_format: pdb
+    keep_exactly_one_primary_contact_chain: true
+    keep_exactly_one_target_ligand: true
+    rebuild_target_ligand_from_ligand_file: true
+    remove_waters: true
+    remove_metals: true
+    remove_salts: true
+    remove_cofactors: true
+    remove_other_hetero_species: true
