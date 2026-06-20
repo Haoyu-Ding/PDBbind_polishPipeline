@@ -1,0 +1,13 @@
+{
+  "final_dataset_bucket_counts": {
+    "nonsugar_flexible": 1224,
+    "nonsugar_rigid": 1125,
+    "sugar": 220
+  },
+  "ligand_representative_count": 13792,
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_deduped.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_deduped.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_deduped.parquet",
+  "protein_representative_count": 8449,
+  "row_count": 19037
+}

@@ -1,0 +1,12 @@
+{
+  "missing_member_counts": {
+    "ligand_mol2_member": 0,
+    "ligand_sdf_member": 0,
+    "protein_pdb_member": 0
+  },
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest.parquet",
+  "row_count": 19037,
+  "structure_archive": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind_v2020r1_official/P-L.tar"
+}

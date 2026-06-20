@@ -1,0 +1,18 @@
+{
+  "complex_only_dir": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/subsets/subset50/complex_only",
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/subset50_selected.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/subset50_selected.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/subset50_selected.parquet",
+  "row_count": 19037,
+  "selected_counts": {
+    "nonsugar_flexible": 50,
+    "nonsugar_rigid": 50,
+    "sugar": 50
+  },
+  "selected_structures_dir": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/subsets/subset50/selected_structures",
+  "unique_protein_clusters_by_bucket": {
+    "nonsugar_flexible": 50,
+    "nonsugar_rigid": 50,
+    "sugar": 50
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "error_count": 0,
+  "exported_count": 2569,
+  "final_export_status_counts": {
+    "exported": 2569,
+    "not_selected": 16468
+  },
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_exported.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_exported.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_exported.parquet",
+  "row_count": 19037,
+  "skipped_count": 0
+}

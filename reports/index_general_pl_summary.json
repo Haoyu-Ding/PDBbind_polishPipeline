@@ -1,0 +1,18 @@
+{
+  "flag_counts": {
+    "covalent_complex": 610,
+    "incomplete_ligand": 541,
+    "isomer_annotation": 27,
+    "peptide_like_mer_annotation": 2458,
+    "redundant_annotation": 181
+  },
+  "method_counts": {
+    "nmr": 304,
+    "xray": 18733
+  },
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/index_general_pl_normalized.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/index_general_pl_normalized.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/index_general_pl_normalized.parquet",
+  "row_count": 19037,
+  "source_index_member": "index/INDEX_general_PL.2020R1.lst"
+}

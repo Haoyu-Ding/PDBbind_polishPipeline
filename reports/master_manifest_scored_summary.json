@@ -1,0 +1,11 @@
+{
+  "nonsugar_flexibility_bucket_counts": {
+    "flexible": 9146,
+    "intermediate": 4647,
+    "rigid": 4558
+  },
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_scored.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_scored.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_scored.parquet",
+  "row_count": 19037
+}

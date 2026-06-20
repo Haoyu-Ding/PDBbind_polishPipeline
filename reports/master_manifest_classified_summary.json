@@ -1,0 +1,19 @@
+{
+  "ligand_class_counts": {
+    "nonsugar": 18355,
+    "sugar": 682
+  },
+  "ligand_class_reason_counts": {
+    "multi_component_defaults_to_nonsugar": 63,
+    "no_5_or_6_member_ring_with_ring_oxygen": 14464,
+    "non_sugar_scaffold_dominates": 945,
+    "oxygen_to_carbon_ratio_too_low": 2759,
+    "parse_failure_defaults_to_nonsugar": 4,
+    "ring_oxygen_exocyclic_oxygen_ratio_match": 682,
+    "too_few_exocyclic_oxygens": 120
+  },
+  "output_csv": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_classified.csv",
+  "output_jsonl": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_classified.jsonl",
+  "output_parquet": "/Users/teihiroshisakai/Documents/Codex/2026-06-17/pdbbind-index-users-teihiroshisakai-documents-codex/pdbbind_pl_pipeline/data/interim/master_manifest_classified.parquet",
+  "row_count": 19037
+}
